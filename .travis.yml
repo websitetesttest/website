@@ -7,7 +7,6 @@ install: go get -v github.com/spf13/hugo # use a stable release
 script:
   - hugo
   - touch public/.nojekyll # required to disable Jekyll generation.
-  - echo "opencensus.io" > public/CNAME
 
 branches:
   only:
@@ -16,7 +15,7 @@ branches:
 # Deploy to GitHub pages
 deploy:
   provider: pages
-  repo: census-instrumentation/census-instrumentation.github.io
+  repo: websitetesttest/websitetesttest.github.io
   target_branch: master
   skip_cleanup: true
   local_dir: public
